@@ -1,0 +1,19 @@
+[package]
+name = "html_preprocessor"
+version = "0.0.1"
+edition = "2021"
+authors = ["Jordon Brooks <jordon@jordongamedev.co.uk>"]
+description = "A simple HTML preprocessor that supports file inclusion and template substitution."
+license = "MIT"
+readme = "README.md"
+repository = ""
+keywords = ["html", "preprocessor", "template"]
+categories = ["web-programming", "template-engine"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["lib"]
+
+[dependencies]
