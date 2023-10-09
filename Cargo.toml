@@ -6,7 +6,7 @@ authors = ["Jordon Brooks <jordon@jordongamedev.co.uk>"]
 description = "A simple HTML preprocessor that supports file inclusion and template substitution."
 license = "MIT"
 readme = "README.md"
-repository = ""
+repository = "https://github.com/Jordonbc/RustHTMLPreprocessor"
 keywords = ["html", "preprocessor", "template"]
 categories = ["web-programming", "template-engine"]
 
