@@ -1,7 +1,7 @@
 use std::{fs, path::{PathBuf, Path}, io::Write};
 
 #[allow(dead_code)]
-fn process_files(base_dir: &str, template_dir: &str, out_dir: &str) {
+pub fn process_files(base_dir: &str, template_dir: &str, out_dir: &str) {
     
     // Redefine all input strings to be path buffers
     let base_dir = PathBuf::from(base_dir);
@@ -47,7 +47,7 @@ fn process_files(base_dir: &str, template_dir: &str, out_dir: &str) {
     }
 }
 
-fn copy_dir_recursively<U: AsRef<Path>, V: AsRef<Path>>(from: U, to: V) -> std::io::Result<()> {
+pub fn copy_dir_recursively<U: AsRef<Path>, V: AsRef<Path>>(from: U, to: V) -> std::io::Result<()> {
   let from = from.as_ref();
   let to = to.as_ref();
   println!("Copying directory recursively from {:?} to {:?}", from, to);
@@ -83,7 +83,7 @@ fn copy_dir_recursively<U: AsRef<Path>, V: AsRef<Path>>(from: U, to: V) -> std::
 }
 
 
-fn process_html(mut base_html: String, index_html: String) -> String {
+pub fn process_html(mut base_html: String, index_html: String) -> String {
     let blocks = ["header", "content"];
 
     for block in &blocks {
